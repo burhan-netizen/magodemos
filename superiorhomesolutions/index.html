@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Superior Home Solutions</title>
+<meta name="description" content="Locally owned general contractor in Lacey, WA. Bathroom remodels, built-ins, decks, additions and finish carpentry across Olympia and Thurston County. Request an in-home estimate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/sunroom.webp">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"GeneralContractor","name":"Superior Home Solutions","telephone":"+1-253-921-2695","url":"https://www.superiorhsremodeling.com","address":{"@type":"PostalAddress","streetAddress":"4702 8th Ave NE","addressLocality":"Lacey","addressRegion":"WA","postalCode":"98516","addressCountry":"US"},"areaServed":["Lacey, WA","Olympia, WA","Thurston County, WA"],"sameAs":["https://www.instagram.com/superior.home.solutions/","https://www.facebook.com/p/Superior-Home-Solutions-61589288084952/"]}
+</script>
+<style>
+/*
+VOICE: steady, plain-spoken PNW carpenter. Proud of the details, no hype.
+IDEA: a builder's job file. Real job photos pinned to a warm paper ground, labelled like site notes.
+PICTURE: the sunroom James built, with a plank ceiling milled from trees on the property.
+COLOUR and TYPE: warm paper #f4f2ec, navy ink from the SHS logo, one navy accent, logo grey for quiet text. Archivo, heavy and tight.
+LAYOUT: hero, proof strip, problem, services, why us, behind the walls, process, work, reviews, area + quote form, final CTA.
+*/
+:root{color-scheme:light;--bg:#f4f2ec;--card:#fff;--ink:#16202f;--ink2:#4c586a;--muted:#5d6876;--accent:#24375a;--accent-h:#1b2b47;--tint:#e6e9ee;--line:#dcd9d0;--r:24px;--ease:cubic-bezier(.2,.7,.2,1)}
+:root[data-theme=dark],:root[data-theme=light]{color-scheme:light}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:120px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Archivo,system-ui,sans-serif;overflow-x:clip;-webkit-tap-highlight-color:transparent}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid #5b8bd6;outline-offset:3px;border-radius:6px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 max(4vw,16px)}
+section{padding:clamp(64px,9vw,136px) 0}
+.label{display:inline-block;font-size:14px;font-weight:600;color:var(--muted);margin:0 0 14px}
+h1,h2,h3{margin:0;letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:clamp(34px,4.6vw,58px);line-height:1.04;font-weight:800}
+h2 .soft,h1 .soft{color:var(--ink2)}
+h3{font-size:21px;line-height:1.2;font-weight:600}
+p{margin:0}
+.lead{font-size:clamp(17px,1.4vw,19px);color:var(--ink2);max-width:62ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 16px/1 Archivo,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s var(--ease),background .2s}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-h)}
+.btn-ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px}
+
+/* demo banner + header */
+.demo{background:var(--ink);color:#e9ecf1;font-size:13.5px;text-align:center;padding:9px 16px;line-height:1.4}
+header{position:sticky;top:0;z-index:40;background:rgba(244,242,236,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hbar{display:flex;align-items:center;gap:20px;height:78px}
+.brand{display:flex;align-items:center;flex:none}
+.brand img{height:54px;width:auto}
+nav{display:flex;gap:26px;margin-left:auto}
+nav a{text-decoration:none;font-weight:500;font-size:15.5px;color:var(--ink2);padding:8px 0}
+nav a:hover{color:var(--ink)}
+.hcall{display:flex;align-items:center;gap:10px;margin-left:8px;text-decoration:none;font-weight:600;white-space:nowrap}
+.hcall small{display:block;font-size:12px;font-weight:500;color:var(--muted)}
+.hcall .ic{width:42px;height:42px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;flex:none}
+.hcall .ic svg{width:18px;height:18px}
+@media(max-width:980px){nav{display:none}.hcall{margin-left:auto}}
+@media(max-width:520px){.hcall .txt{display:none}.brand img{height:46px}.hbar{height:68px}}
+
+/* hero */
+.hero{padding:clamp(36px,5vw,72px) 0 clamp(48px,6vw,88px)}
+.hgrid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(28px,4vw,64px);align-items:center}
+.hero h1{font-size:clamp(46px,7.4vw,104px);line-height:.97;font-weight:800;letter-spacing:-.025em}
+.hero .lead{margin:26px 0 32px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.tel-note{font-size:14px;color:var(--muted);margin-top:14px}
+.hpic{position:relative}
+.hpic img{width:100%;aspect-ratio:4/4.6;object-fit:cover;border-radius:32px}
+.note{position:absolute;left:-22px;bottom:28px;background:var(--card);border-radius:18px;padding:16px 18px;max-width:270px;box-shadow:0 18px 40px -18px rgba(22,32,47,.35);font-size:14.5px;line-height:1.45}
+.note b{display:block;font-size:13px;color:var(--muted);font-weight:600;margin-bottom:4px}
+@media(max-width:860px){.hgrid{grid-template-columns:1fr}.note{left:12px;bottom:12px}.hpic img{aspect-ratio:4/4}}
+
+/* proof */
+.proof{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:clamp(40px,5vw,64px)}
+.pf{background:var(--card);border-radius:20px;padding:20px 22px}
+.pf strong{display:block;min-height:1.1em;font-size:clamp(24px,2.4vw,32px);font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.pf>span{font-size:14.5px;color:var(--muted)}
+.pf .count{font:inherit;color:inherit;display:inline-block;min-width:1.15em;text-align:right;font-variant-numeric:tabular-nums}
+.stars{color:#c9921a;letter-spacing:2px}
+@media(max-width:860px){.proof{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* problem */
+.prob{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:end}
+.prob .lead+.lead{margin-top:16px}
+@media(max-width:860px){.prob{grid-template-columns:1fr}}
+
+/* services */
+.svc-head{display:flex;justify-content:space-between;gap:24px;align-items:end;flex-wrap:wrap;margin-bottom:40px}
+.svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:var(--card);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.card .cb{padding:22px 24px 26px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card p{color:var(--ink2);font-size:16px}
+.card a{margin-top:auto;padding-top:10px;font-weight:600;font-size:15px;text-decoration:none;color:var(--accent)}
+.card a:hover{text-decoration:underline}
+@media(max-width:980px){.svc{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.svc{grid-template-columns:1fr}}
+
+/* why band */
+.band{background:var(--ink);color:#eef0f3;border-radius:36px;margin:0 max(2vw,8px);padding:clamp(48px,7vw,104px) 0}
+.band .label{color:#a9b3c1}
+.band h2 .soft{color:#9aa6b6}
+.why{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,72px);align-items:center}
+.why img{border-radius:28px;width:100%;aspect-ratio:4/5;object-fit:cover}
+.why .lead{color:#c5ccd6;margin:22px 0 30px}
+.pts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 28px;margin:0;padding:0;list-style:none}
+.pts li{border-top:1px solid rgba(255,255,255,.18);padding-top:16px}
+.pts b{display:block;font-size:17px;margin-bottom:4px}
+.pts span{color:#b9c1cc;font-size:15.5px}
+.reframe{margin-top:30px;font-size:15px;color:#a9b3c1}
+@media(max-width:860px){.why{grid-template-columns:1fr}.why img{aspect-ratio:4/3}}
+@media(max-width:520px){.pts{grid-template-columns:1fr}}
+
+/* behind the walls */
+.btw{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.btw figure{margin:0;position:relative}
+.btw img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r)}
+.tag{position:absolute;top:14px;left:14px;background:var(--card);border-radius:999px;padding:7px 14px;font-size:13.5px;font-weight:600}
+.btw-copy{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);margin-bottom:40px;align-items:end}
+@media(max-width:860px){.btw-copy{grid-template-columns:1fr}}
+@media(max-width:520px){.btw{grid-template-columns:1fr}}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:44px;counter-reset:s}
+.step{background:var(--card);border-radius:var(--r);padding:26px 24px 28px}
+.step .n{width:40px;height:40px;border-radius:50%;background:var(--tint);color:var(--accent);display:grid;place-items:center;font-weight:800;margin-bottom:18px}
+.step p{color:var(--ink2);font-size:16px;margin-top:8px}
+@media(max-width:980px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* work */
+.work{columns:3 280px;column-gap:16px;margin-top:44px}
+.work figure{break-inside:avoid;margin:0 0 16px;background:var(--card);border-radius:var(--r);overflow:hidden}
+.work img{width:100%}
+.work figcaption{padding:14px 18px 16px;font-size:15px;color:var(--ink2)}
+.work figcaption b{display:block;color:var(--ink);font-weight:600;font-size:15.5px}
+.ig{margin-top:12px;font-size:15px;color:var(--muted)}
+
+/* reviews */
+.revs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px}
+.rev{background:var(--card);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:14px;margin:0}
+.rev blockquote{margin:0;font-size:16.5px;line-height:1.55}
+.rev figcaption{margin-top:auto;display:flex;align-items:center;gap:12px;font-size:14.5px;color:var(--muted)}
+.rev figcaption b{display:block;color:var(--ink);font-size:15.5px}
+.av{width:40px;height:40px;border-radius:50%;background:var(--tint);color:var(--accent);display:grid;place-items:center;font-weight:800;font-size:14px;flex:none}
+.rev.big{grid-column:span 2}
+@media(max-width:980px){.revs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.revs{grid-template-columns:1fr}.rev.big{grid-column:auto}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,72px)}
+.facts{margin:28px 0 0;padding:0;list-style:none;display:grid;gap:14px}
+.facts li{background:var(--card);border-radius:18px;padding:16px 20px}
+.facts b{display:block;font-size:13.5px;color:var(--muted);font-weight:600;margin-bottom:2px}
+.facts a{font-weight:600;font-size:19px;text-decoration:none}
+.ph{color:var(--muted);font-style:italic}
+form{align-content:start;align-self:start;background:var(--card);border-radius:28px;padding:clamp(22px,3vw,36px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 16px}
+form .full{grid-column:1/-1}
+label{display:block;font-size:14.5px;font-weight:600;margin-bottom:6px}
+input,select,textarea{width:100%;font:16px Archivo,sans-serif;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:13px 14px;min-height:50px}
+textarea{min-height:120px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(36,55,90,.18)}
+.err{color:#a3261d;font-size:13.5px;margin-top:5px;display:none}
+.invalid .err{display:block}
+.invalid input{border-color:#a3261d}
+.formnote{font-size:13.5px;color:var(--muted)}
+.ok{grid-column:1/-1;background:var(--tint);border-radius:14px;padding:16px 18px;display:none}
+@media(max-width:860px){.contact{grid-template-columns:1fr}}
+@media(max-width:520px){form{grid-template-columns:1fr}}
+
+/* final cta */
+.final{background:var(--accent);color:#fff;border-radius:36px;padding:clamp(44px,6vw,88px) clamp(24px,5vw,72px);display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.final h2{max-width:16ch}
+.final p{color:#cfd7e4;margin-top:12px;font-size:18px}
+.final .btn-primary{background:#fff;color:var(--accent)}
+.final .btn-primary:hover{background:#e7ebf1}
+.final .btn-ghost{border-color:#fff;color:#fff}
+.final .btn-ghost:hover{background:#fff;color:var(--accent)}
+
+footer{background:var(--ink);color:#c5ccd6;margin-top:clamp(64px,8vw,120px);padding:56px 0 110px;font-size:15px}
+.fgrid{display:grid;grid-template-columns:minmax(0,1.2fr) repeat(3,minmax(0,1fr));gap:32px}
+footer img{height:72px;width:auto;margin-bottom:14px}
+footer h4{color:#fff;font-size:15px;margin:0 0 10px}
+footer a{text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.credit{border-top:1px solid rgba(255,255,255,.14);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:14px;color:#9aa6b6}
+.credit a{color:#fff;font-weight:600}
+@media(max-width:860px){.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.fgrid{grid-template-columns:1fr}}
+
+/* sticky mobile bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(244,242,236,.96);border-top:1px solid var(--line)}
+.mbar .btn{flex:1;min-height:50px;padding:0 12px}
+@media(max-width:760px){.mbar{display:flex}}
+
+/* reveal: content is visible unless JS is running */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}.btn{transition:none}}
+@media(hover:none){.btn-ghost:hover{background:transparent;color:var(--ink)}}
+
+/* ===== premium layer ===== */
+.demo a{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.demo a:hover{text-decoration-thickness:2px}
+.prog{position:fixed;top:0;left:0;height:3px;width:100%;background:linear-gradient(90deg,#5b7fb8,#24375a);transform-origin:0 50%;transform:scaleX(var(--sp,0));z-index:60;pointer-events:none}
+header{transition:box-shadow .3s,background .3s}
+header.scrolled{box-shadow:0 10px 30px -18px rgba(22,32,47,.35);background:rgba(244,242,236,.97)}
+.hbar{transition:height .3s var(--ease)}
+header.scrolled .hbar{height:66px}
+.brand img{transition:height .3s var(--ease)}
+header.scrolled .brand img{height:46px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px}
+.dot{width:8px;height:8px;border-radius:50%;background:#3f9b5e;box-shadow:0 0 0 0 rgba(63,155,94,.5);animation:ping 2.4s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(63,155,94,.5)}70%{box-shadow:0 0 0 9px rgba(63,155,94,0)}100%{box-shadow:0 0 0 0 rgba(63,155,94,0)}}
+/* liquid-metal buttons */
+.btn{position:relative;overflow:hidden;isolation:isolate}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.38) 47%,rgba(255,255,255,.58) 50%,rgba(255,255,255,.38) 53%,transparent 65%);transform:translateX(-130%);opacity:0}
+.btn:hover::before,.btn:focus-visible::before{opacity:1;animation:sweep .85s ease}
+@keyframes sweep{from{transform:translateX(-130%)}to{transform:translateX(130%)}}
+.btn::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;box-shadow:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 0 rgba(0,0,0,.28)}
+.btn-primary{background:linear-gradient(180deg,#34507f 0%,#24375a 55%,#18263f 100%);box-shadow:0 10px 24px -12px rgba(36,55,90,.7)}
+.btn-primary:hover{background:linear-gradient(180deg,#3b5a8d 0%,#29406a 55%,#1b2b47 100%);transform:translateY(-1px)}
+.btn-ghost{background:linear-gradient(180deg,#fff 0%,#fbfaf7 55%,#f1efe9 100%)}
+.btn-ghost::before{background:linear-gradient(105deg,transparent 35%,rgba(22,32,47,.07) 47%,rgba(22,32,47,.12) 50%,rgba(22,32,47,.07) 53%,transparent 65%)}
+.btn-ghost::after{box-shadow:inset 0 1px 0 rgba(255,255,255,.9),inset 0 -1px 0 rgba(22,32,47,.1)}
+.btn:active{transform:translateY(1px) scale(.985)}
+.btn-ripple{position:absolute;z-index:-1;pointer-events:none;width:20px;height:20px;border-radius:50%;transform:translate(-50%,-50%) scale(0);background:radial-gradient(circle,rgba(255,255,255,.45) 0%,rgba(255,255,255,0) 70%);animation:ripple .6s ease forwards}
+.btn-ghost .btn-ripple{background:radial-gradient(circle,rgba(22,32,47,.18) 0%,rgba(22,32,47,0) 70%)}
+@keyframes ripple{from{transform:translate(-50%,-50%) scale(0);opacity:.9}to{transform:translate(-50%,-50%) scale(4);opacity:0}}
+.final .btn-primary{background:linear-gradient(180deg,#fff 0%,#f3f5f8 100%);box-shadow:none}
+.final .btn-ghost{background:transparent}.final .btn-ghost::before{background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.3) 50%,transparent 65%)}
+/* hero entrance */
+.split .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.06em;margin-bottom:-.06em}
+.split .w>span{display:inline-block}
+.js .split .w>span{transform:translateY(105%);animation:wordUp .9s var(--ease) forwards}
+.js .split .w:nth-of-type(1)>span{animation-delay:.15s}.js .split .w:nth-of-type(2)>span{animation-delay:.25s}
+.js .split .soft .w:nth-of-type(1)>span{animation-delay:.36s}.js .split .soft .w:nth-of-type(2)>span{animation-delay:.46s}
+@keyframes wordUp{to{transform:none}}
+.js .hin{opacity:0;transform:translateY(14px);animation:fadeUp .8s var(--ease) var(--d,0s) forwards}
+@keyframes fadeUp{to{opacity:1;transform:none}}
+.hmask{border-radius:32px;overflow:hidden;position:relative}
+.hmask img{border-radius:0!important;transform:translate3d(0,var(--py,0px),0) scale(1.08)}
+.js .hmask{clip-path:inset(100% 0 0 0 round 32px);animation:unclip 1.2s cubic-bezier(.7,0,.2,1) .2s forwards}
+.js .hmask img{animation:settle 1.8s var(--ease) .2s both}
+@keyframes unclip{to{clip-path:inset(0 0 0 0 round 32px)}}
+@keyframes settle{from{transform:scale(1.3)}to{transform:translate3d(0,var(--py,0px),0) scale(1.08)}}
+.js .note{opacity:0;animation:fadeUp .8s var(--ease) 1.1s forwards,bob 6s ease-in-out 2s infinite}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -8px}}
+.stars.pop i{font-style:normal;display:inline-block}
+.js .stars.pop i{opacity:0;transform:scale(.3)}
+.js .in .stars.pop i,.js .stars.pop.go i{animation:starPop .5s cubic-bezier(.3,1.6,.5,1) forwards}
+.stars.pop i:nth-child(2){animation-delay:.08s!important}.stars.pop i:nth-child(3){animation-delay:.16s!important}.stars.pop i:nth-child(4){animation-delay:.24s!important}.stars.pop i:nth-child(5){animation-delay:.32s!important}
+@keyframes starPop{to{opacity:1;transform:none}}
+/* marquee */
+.mq{background:var(--ink);color:#e9ecf1;overflow:hidden;padding:22px 0;max-width:100%}
+.mq-track{display:flex;width:max-content;align-items:center;gap:34px;animation:mq 38s linear infinite;font-weight:800;font-size:clamp(22px,2.6vw,34px);letter-spacing:-.01em;white-space:nowrap;padding-right:34px}
+.mq-track b{color:#7f93b5;font-size:.6em}
+.mq:hover .mq-track{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* section headings + stagger */
+.js .rv h2{clip-path:inset(0 0 100% 0);transform:translateY(30px);transition:clip-path 1s cubic-bezier(.7,0,.2,1),transform 1s var(--ease)}
+.js .rv.in h2{clip-path:inset(-10% -5% -15% -5%);transform:none}
+.js .stag>*{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.js .stag.in>*{opacity:1;transform:none}
+.stag.in>*:nth-child(2){transition-delay:.08s}.stag.in>*:nth-child(3){transition-delay:.16s}.stag.in>*:nth-child(4){transition-delay:.24s}.stag.in>*:nth-child(5){transition-delay:.32s}.stag.in>*:nth-child(6){transition-delay:.4s}.stag.in>*:nth-child(7){transition-delay:.48s}.stag.in>*:nth-child(8){transition-delay:.56s}
+.stag>.rv{opacity:1}
+/* card + image hovers */
+.card,.work figure,.rev,.pf{transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.card:hover,.work figure:hover,.rev:hover{transform:translateY(-6px);box-shadow:0 26px 50px -28px rgba(22,32,47,.45)}
+.card .imw,.work .imw{overflow:hidden}
+.card img,.work img{transition:transform 1.1s var(--ease)}
+.card:hover img,.work figure:hover img{transform:scale(1.06)}
+.btw figure{overflow:hidden;border-radius:var(--r)}
+.btw img{transition:transform 1.2s var(--ease)}
+.btw figure:hover img{transform:scale(1.05)}
+.js .btw.rv figure{clip-path:inset(0 100% 0 0 round 24px);transition:clip-path 1.3s cubic-bezier(.7,0,.2,1)}
+.js .btw.rv figure+figure{transition-delay:.25s}
+.js .btw.rv.in figure{clip-path:inset(0 0 0 0 round 24px)}
+.why img{transition:transform 1.2s var(--ease)}
+/* process stack */
+.proc{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,80px);align-items:start}
+.proc-l{position:sticky;top:130px}
+.gets{display:grid;gap:16px}
+.get{background:var(--card);border-radius:28px;padding:clamp(26px,3vw,40px);display:flex;gap:24px;align-items:flex-start;box-shadow:0 2px 10px rgba(22,32,47,.05);border:1px solid rgba(22,32,47,.06)}
+.get .gn{font-size:clamp(44px,5vw,68px);font-weight:800;line-height:.9;letter-spacing:-.04em;color:var(--accent);opacity:.9;flex:none;min-width:1.6em}
+.get h3{font-size:clamp(22px,2vw,28px);font-weight:800;letter-spacing:-.02em}
+.get p{color:var(--ink2);margin-top:10px}
+.get:nth-child(even){background:#fbfaf6}
+.gets.is-stacking{display:block}
+.gets.is-stacking .get{margin-bottom:5rem;min-height:13rem;transform-origin:top center;backface-visibility:hidden;will-change:transform,filter;box-shadow:0 20px 50px -24px rgba(22,32,47,.35);transition:none}
+.stack-end{height:1px;margin-top:30vh}
+@media(max-width:860px){.proc{grid-template-columns:1fr}.proc-l{position:static}}
+/* footer ambient */
+.foot{position:relative;overflow:hidden}
+.foot-aurora{position:absolute;left:50%;top:40%;width:80vw;height:60vh;transform:translate(-50%,-50%);border-radius:50%;filter:blur(90px);background:radial-gradient(circle,rgba(91,127,184,.35) 0%,rgba(134,150,165,.12) 45%,transparent 70%);pointer-events:none;z-index:0;animation:breathe 8s ease-in-out infinite alternate}
+@keyframes breathe{from{transform:translate(-50%,-50%) scale(1);opacity:.6}to{transform:translate(-50%,-50%) scale(1.1);opacity:1}}
+.foot-giant{position:absolute;left:50%;bottom:-3.5vw;z-index:0;transform:translateX(-50%) translateY(calc((1 - var(--p,0)) * 10vh)) scale(calc(.85 + .15 * var(--p,0)));opacity:calc(var(--p,0) * .9);font-weight:800;font-size:17vw;letter-spacing:-.05em;line-height:1;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.14);background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,0));-webkit-background-clip:text;background-clip:text;pointer-events:none;user-select:none}
+footer{padding-bottom:clamp(140px,16vw,240px)}
+.foot-heart{display:inline-block;color:#e5707a;animation:beat 2s cubic-bezier(.25,1,.5,1) infinite}
+@keyframes beat{0%,100%{transform:scale(1)}15%,45%{transform:scale(1.2)}30%{transform:scale(1)}}
+.magnetic{will-change:transform}
+@media(prefers-reduced-motion:reduce){
+ .btn::before,.btn-ripple{display:none}.btn:active{transform:none}
+ .js .split .w>span,.js .hin,.js .note,.js .hmask,.js .hmask img{animation:none!important;transform:none;opacity:1;clip-path:none}
+ .hmask img{transform:scale(1.02)}
+ .js .stars.pop i{opacity:1;transform:none;animation:none!important}
+ .mq-track,.dot,.foot-aurora,.foot-heart{animation:none}
+ .js .rv h2,.js .btw.rv figure{clip-path:none;transform:none;transition:none}
+ .js .stag>*{opacity:1;transform:none;transition:none}
+ .foot-giant{opacity:.9;transform:translateX(-50%)}
+ .card:hover,.work figure:hover,.rev:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="demo" role="note">Concept website prepared for Superior Home Solutions by <a href="https://magolabs.in">Mago Labs</a>. Not the live site.</div>
+
+<div class="prog" aria-hidden="true"></div>
+<header id="hdr">
+  <div class="wrap hbar">
+    <a class="brand" href="#top" aria-label="Superior Home Solutions, back to top"><img src="img/logo.webp" alt="Superior Home Solutions logo" width="555" height="385"></a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a><a href="#why">Why us</a><a href="#process">How we work</a><a href="#work">Our work</a><a href="#reviews">Reviews</a>
+    </nav>
+    <a class="hcall magnetic" href="tel:+12539212695"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span><span class="txt"><small>Call or text James</small>(253) 921-2695</span></a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hgrid">
+      <div>
+        <span class="label hin eyebrow" style="--d:.1s"><i class="dot" aria-hidden="true"></i>Locally owned general contractor · Lacey, WA</span>
+        <h1 class="split"><span class="w"><span>Honest</span></span> <span class="w"><span>work.</span></span><br><span class="soft"><span class="w"><span>Finished</span></span> <span class="w"><span>right.</span></span></span></h1>
+        <p class="lead hin" style="--d:.55s">Remodels, additions, decks and finish carpentry for homes in Olympia, Lacey and across Thurston County, built by carpenters with two decades of hands-on experience.</p>
+        <div class="ctas hin" style="--d:.7s">
+          <a class="btn btn-primary" href="#contact">Book my in-home estimate</a>
+          <a class="btn btn-ghost" href="tel:+12539212695"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(253) 921-2695</a>
+        </div>
+        <p class="tel-note">Prefer to talk it through? Call (253) 921-2695.</p>
+      </div>
+      <div class="hpic" id="hpic">
+        <div class="hmask"><img id="himg" src="img/sunroom.webp" alt="Sunroom addition with a warm wood plank ceiling, large black-framed windows and plank flooring" width="1200" height="1600" fetchpriority="high"></div>
+        <p class="note float"><b>Sunroom addition, Lacey</b>The plank ceiling was milled onsite from trees on the homeowner's own property.</p>
+      </div>
+    </div>
+    <div class="proof stag" aria-label="At a glance">
+      <div class="pf"><strong><span class="stars pop" aria-hidden="true" style="font-size:.8em"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></span></strong><span>Five-star reviews on Google</span></div>
+      <div class="pf"><strong><span class="count" data-to="20">20</span>+ years</strong><span>Hands-on building experience</span></div>
+      <div class="pf"><strong>Locally owned</strong><span>Based in Lacey, Washington</span></div>
+      <div class="pf"><strong>Free estimates</strong><span>In your home, on your schedule</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="mq" aria-hidden="true"><div class="mq-track"><span>Bathroom remodels</span><b>✦</b><span>Built-ins and cabinetry</span><b>✦</b><span>Decks and patio covers</span><b>✦</b><span>French doors and bay windows</span><b>✦</b><span>Sunrooms and additions</span><b>✦</b><span>Finish carpentry</span><b>✦</b></div></div>
+
+<section class="rv" aria-labelledby="prob-h">
+  <div class="wrap prob">
+    <div>
+      <span class="label">The problem</span>
+      <h2 id="prob-h">"I just want someone who shows up, <span class="soft">talks straight and does it right."</span></h2>
+    </div>
+    <div>
+      <p class="lead">Most homeowners have a story about a contractor who went quiet halfway through, left a mess, or covered up shortcuts behind fresh paint.</p>
+      <p class="lead">Superior Home Solutions was built to be the opposite: the people you meet at the estimate are the carpenters doing the work, and they treat your house like their own.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" aria-labelledby="svc-h" style="padding-top:0">
+  <div class="wrap">
+    <div class="svc-head rv">
+      <div><span class="label">What we do</span><h2 id="svc-h">Inside, outside <span class="soft">and everything in between.</span></h2></div>
+      <a class="btn btn-ghost" href="#contact">Book my in-home estimate</a>
+    </div>
+    <div class="svc stag">
+      <article class="card"><div class="imw"><img src="img/bathroom-stone.webp" alt="Remodeled bathroom with large stone-look tile, glass shower and floating vanity" width="900" height="1199" loading="lazy"></div><div class="cb"><h3>Bathroom remodels</h3><p>Tile showers, vanities, tubs and the waterproofing behind them, done properly from the studs out.</p><a href="#contact">Plan my bathroom</a></div></article>
+      <article class="card"><div class="imw"><img src="img/entertainment-wall.webp" alt="White built-in entertainment wall with open shelving and lower cabinets" width="900" height="675" loading="lazy"></div><div class="cb"><h3>Built-ins and cabinetry</h3><p>Entertainment walls, fireplace surrounds, mudroom storage and custom cabinets that fit the room.</p><a href="#contact">Talk built-ins</a></div></article>
+      <article class="card"><div class="imw"><img src="img/deck-composite.webp" alt="Composite deck with brown rails and a wide staircase on a grey two-storey house" width="900" height="675" loading="lazy"></div><div class="cb"><h3>Decks and outdoor living</h3><p>Decks, patio covers, railings and spa surrounds that make the backyard worth using year round.</p><a href="#contact">Price my deck</a></div></article>
+      <article class="card"><div class="imw"><img src="img/french-doors-patio.webp" alt="New French doors opening onto a covered patio with trim and siding finished around them" width="900" height="771" loading="lazy"></div><div class="cb"><h3>Doors, windows and trim</h3><p>French doors, bay windows, entry doors and the framing, siding and trim work that ties them in.</p><a href="#contact">Upgrade my doors</a></div></article>
+      <article class="card"><div class="imw"><img src="img/sunroom.webp" alt="Bright sunroom addition with wood plank ceiling" width="1200" height="1600" loading="lazy" style="aspect-ratio:4/3;object-fit:cover"></div><div class="cb"><h3>Additions and sunrooms</h3><p>Extra living space that looks like it was always part of the house, inside and out.</p><a href="#contact">Discuss an addition</a></div></article>
+      <article class="card"><div class="imw"><img src="img/cabinetry-progress.webp" alt="Custom cabinetry with open doors during installation" width="900" height="863" loading="lazy"></div><div class="cb"><h3>Repairs and finish carpentry</h3><p>Subfloor repairs, door replacements, shelving and the small jobs other contractors turn down.</p><a href="#contact">Get it fixed</a></div></article>
+    </div>
+  </div>
+</section>
+</main>
+
+<section id="why" class="band" aria-labelledby="why-h">
+  <div class="wrap why">
+    <img class="rv" src="img/fireplace-builtins.webp" alt="Living room fireplace wall with stone surround, wood cabinets and lit floating shelves" width="900" height="900" loading="lazy">
+    <div class="rv">
+      <span class="label">Why Superior</span>
+      <h2 id="why-h">A carpenter's eye, <span class="soft">not a sales pitch.</span></h2>
+      <p class="lead">This is a small, locally owned business. The owner is on your job, the crew knows the trade, and the goal on every project is simple: work we're proud of and a homeowner who'd hire us again.</p>
+      <ul class="pts">
+        <li><b>Skilled carpenters</b><span>Two decades of framing, finish and cabinet work. Customers call it out by name.</span></li>
+        <li><b>A clean, organised site</b><span>Your home stays livable while the work gets done.</span></li>
+        <li><b>Honest communication</b><span>Clear answers from the estimate to the final walk-through.</span></li>
+        <li><b>Details that last</b><span>Prep, fit and trim get the same care as the finish you see.</span></li>
+      </ul>
+      <p class="reframe">Licence and insurance details: to be added before launch.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="btw-h">
+  <div class="wrap">
+    <div class="btw-copy rv">
+      <div><span class="label">Behind the walls</span><h2 id="btw-h">The part you never see <span class="soft">is the part we sweat.</span></h2></div>
+      <p class="lead">Everyone notices the finished tile. The shower lasts because of the wall prep, waterproofing and layout that came first. Here is the same kind of job, before the reveal and after.</p>
+    </div>
+    <div class="btw rv">
+      <figure><img src="img/tile-prep.webp" alt="Shower walls mid-renovation with patched backer board and a work light" width="900" height="900" loading="lazy"><span class="tag">During: wall prep</span></figure>
+      <figure><img src="img/bathroom-tile.webp" alt="Finished bathroom with dark stone-look tile walls, recessed niche and floating vanity" width="900" height="900" loading="lazy"><span class="tag">After: the reveal</span></figure>
+    </div>
+  </div>
+</section>
+
+<section id="process" aria-labelledby="pr-h" style="padding-top:0">
+  <div class="wrap proc">
+    <div class="proc-l rv"><span class="label">How we work</span><h2 id="pr-h">Four steps. <span class="soft">No surprises.</span></h2><p class="lead" style="margin-top:18px">From the first walk-through to the final detail, you always know what is happening and who is doing it.</p><a class="btn btn-primary" href="#contact" style="margin-top:28px">Book my in-home estimate</a></div>
+    <div class="gets" id="gets">
+      <article class="get"><span class="gn">01</span><div><h3>In-home walk-through</h3><p>We visit, look at the space and listen to what you want it to do. Measurements, photos and honest first thoughts.</p></div></article>
+      <article class="get"><span class="gn">02</span><div><h3>Clear proposal</h3><p>A written proposal shaped around your goals, scope and timeline, so you can decide with the full picture.</p></div></article>
+      <article class="get"><span class="gn">03</span><div><h3>Careful build</h3><p>Skilled carpenters on site, a tidy workspace and regular updates while the work happens.</p></div></article>
+      <article class="get"><span class="gn">04</span><div><h3>Final walk-through</h3><p>We go over every detail with you, trim to touch-up, before we call it finished.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="work" aria-labelledby="wk-h" style="padding-top:0">
+  <div class="wrap">
+    <div class="rv"><span class="label">Recent work</span><h2 id="wk-h">Real homes <span class="soft">around Thurston County.</span></h2></div>
+    <div class="work stag">
+      <figure><div class="imw"><img src="img/green-builtins.webp" alt="Deep green wall with crisp white built-in cabinets and window seat" width="900" height="771" loading="lazy"></div><figcaption><b>Built-ins on a green feature wall</b>Lower storage, open wall above.</figcaption></figure>
+      <figure><div class="imw"><img src="img/bay-window.webp" alt="Bay window with new trim and vertical siding" width="900" height="1124" loading="lazy"></div><figcaption><b>Bay window trim and siding</b>Exterior details finished around the projection.</figcaption></figure>
+      <figure><div class="imw"><img src="img/patio-cover-spa.webp" alt="Covered patio with a warm wood ceiling over a hot tub and deck" width="900" height="771" loading="lazy"></div><figcaption><b>Covered patio, Olympia</b>Finished wood ceiling, open sides.</figcaption></figure>
+      <figure><div class="imw"><img src="img/bathroom-marble.webp" alt="Bathroom with marble-look shower, black fixtures and wood vanity" width="900" height="900" loading="lazy"></div><figcaption><b>Bathroom remodel, Olympia</b>Warm wood, marble-look shower, black trim.</figcaption></figure>
+      <figure><div class="imw"><img src="img/spa-surround.webp" alt="Grey composite spa surround set into a flagstone patio" width="900" height="675" loading="lazy"></div><figcaption><b>Spa surround</b>Tidy border, clean corners.</figcaption></figure>
+      <figure><div class="imw"><img src="img/front-door.webp" alt="White paneled entry door with glass sidelight and brass handle" width="900" height="1199" loading="lazy"></div><figcaption><b>Entry door and trim</b>Fitted and finished on a brick porch.</figcaption></figure>
+      <figure><div class="imw"><img src="img/deck-stairs.webp" alt="Two-tone deck with wide stairs and contrasting rails" width="900" height="900" loading="lazy"></div><figcaption><b>Backyard deck, Olympia</b>Wide stairs, contrasting rails.</figcaption></figure>
+      <figure><div class="imw"><img src="img/patio-cover-rail.webp" alt="Black wood privacy rail on a covered porch" width="900" height="675" loading="lazy"></div><figcaption><b>Porch privacy rail</b>Custom slatted panels.</figcaption></figure>
+    </div>
+    <p class="ig">More projects every week on Instagram: <a href="https://www.instagram.com/superior.home.solutions/">@superior.home.solutions</a></p>
+  </div>
+</section>
+
+<section id="reviews" aria-labelledby="rv-h" style="padding-top:0">
+  <div class="wrap">
+    <div class="rv"><span class="label">Reviews</span><h2 id="rv-h">What homeowners <span class="soft">say on Google.</span></h2></div>
+    <div class="revs stag">
+      <figure class="rev big"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote>"We couldn't be happier with the work Superior Home Solutions completed for us! From the very beginning, they were professional, communicative and attentive to every detail we asked for! They delivered exceptional craftsmanship, stayed on schedule and kept the worksite clean and organized throughout the entire process."</blockquote><figcaption><span class="av" aria-hidden="true">BH</span><span><b>Brittany Holmes</b>Doors, window and subfloor repairs</span></figcaption></figure>
+      <figure class="rev"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote>"James was responsible for a very involved complete bathroom remodel project which included substantial exterior house improvements. He was very skilled and capable and performed well as a skilled carpenter in all aspects of the project."</blockquote><figcaption><span class="av" aria-hidden="true">ML</span><span><b>Michael Layman</b>Bathroom remodel and exterior</span></figcaption></figure>
+      <figure class="rev"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote>"Superior home solutions did an amazing job painting a store front, local bookshop in Olympia! James communicated well and was professional from start to finish!"</blockquote><figcaption><span class="av" aria-hidden="true">EQ</span><span><b>Elizabeth Qualm</b>Storefront, Olympia</span></figcaption></figure>
+      <figure class="rev"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote>"I called Superior Home Solutions to help me put up some shelves in my kitchen. I'm very happy with the end results! Very professional! Will use their services again!!"</blockquote><figcaption><span class="av" aria-hidden="true">CH</span><span><b>Cyrus Hester</b>Kitchen shelving</span></figcaption></figure>
+      <figure class="rev"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote>"They did some painting at my new store front location inside of the mall and were very helpful and great to work with!"</blockquote><figcaption><span class="av" aria-hidden="true">RR</span><span><b>Rubi Rojas</b>Storefront painting</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact" aria-labelledby="ct-h" style="padding-top:0">
+  <div class="wrap contact">
+    <div class="rv">
+      <span class="label">Free in-home estimate</span>
+      <h2 id="ct-h">Tell us about <span class="soft">your project.</span></h2>
+      <p class="lead" style="margin-top:18px">Share a few details and James will get back to you to set up a walk-through. Prefer the phone? Call or text any time.</p>
+      <ul class="facts">
+        <li><b>Phone</b><a href="tel:+12539212695">(253) 921-2695</a></li>
+        <li><b>Service area</b>Lacey, Olympia and Thurston County, plus the surrounding areas</li>
+        <li><b>Based at</b>4702 8th Ave NE, Lacey, WA 98516</li>
+        <li><b>Licence and insurance</b><span class="ph">WA contractor registration number to be added</span></li>
+      </ul>
+    </div>
+    <form id="qf" class="rv" novalidate>
+      <div><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required><p class="err">Please add your name so James knows who to ask for.</p></div>
+      <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required><p class="err">Please add a phone number we can reach you on.</p></div>
+      <div><label for="f-city">City</label><input id="f-city" name="city" autocomplete="address-level2" placeholder="Lacey, Olympia, Tumwater..."></div>
+      <div><label for="f-type">Project type</label><select id="f-type" name="type"><option>Bathroom remodel</option><option>Built-ins or cabinetry</option><option>Deck or outdoor living</option><option>Doors, windows or trim</option><option>Addition or sunroom</option><option>Repairs or something else</option></select></div>
+      <div class="full"><label for="f-msg">What would you like done?</label><textarea id="f-msg" name="msg" placeholder="A few lines about the space, the timing and anything you already have in mind."></textarea></div>
+      <div class="full" style="display:flex;flex-wrap:wrap;gap:14px;align-items:center"><button class="btn btn-primary" type="submit">Book my in-home estimate</button><span class="formnote">No obligation, no pressure.</span></div>
+      <p class="ok full" id="ok" role="status">Thanks! This is a concept site, so nothing was sent. On the live site your request goes straight to James.</p>
+    </form>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="final rv">
+    <div><h2>Let's build something you'll be proud of.</h2><p>Free in-home estimates across Thurston County.</p></div>
+    <div class="ctas"><a class="btn btn-primary" href="#contact">Book my in-home estimate</a><a class="btn btn-ghost" href="tel:+12539212695">(253) 921-2695</a></div>
+  </div>
+</div>
+
+<footer class="foot" id="foot">
+  <div class="foot-aurora" aria-hidden="true"></div>
+  <div class="foot-giant" aria-hidden="true">SUPERIOR</div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="fgrid">
+      <div><img src="img/logo-white.webp" alt="Superior Home Solutions" width="555" height="385" loading="lazy"><p>Locally owned general contractor serving Lacey, Olympia and Thurston County.</p></div>
+      <div><h4>Services</h4><ul><li>Bathroom remodels</li><li>Built-ins and cabinetry</li><li>Decks and outdoor living</li><li>Doors, windows and trim</li><li>Additions and sunrooms</li></ul></div>
+      <div><h4>Service area</h4><ul><li>Lacey</li><li>Olympia</li><li>Thurston County</li><li>Surrounding areas</li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:+12539212695">(253) 921-2695</a></li><li>4702 8th Ave NE<br>Lacey, WA 98516</li><li><a href="https://www.instagram.com/superior.home.solutions/">Instagram</a></li><li><a href="https://www.facebook.com/p/Superior-Home-Solutions-61589288084952/">Facebook</a></li></ul></div>
+    </div>
+    <div class="credit"><span>© 2026 Superior Home Solutions</span><span>Website concept crafted with <span class="foot-heart" aria-hidden="true">♥</span> by <a href="https://magolabs.in">Mago Labs</a></span></div>
+  </div>
+</footer>
+
+<div class="mbar" aria-label="Quick actions"><a class="btn btn-ghost" href="tel:+12539212695">Call</a><a class="btn btn-primary" href="#contact">Free estimate</a></div>
+
+<script>
+{
+  const root=document.documentElement;
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const hdr=document.getElementById('hdr'),prog=document.querySelector('.prog');
+  const himg=document.getElementById('himg'),hpic=document.getElementById('hpic'),foot=document.getElementById('foot');
+  let q=false;
+  const clamp=v=>v<0?0:v>1?1:v;
+  const onScroll=()=>{q=false;const y=scrollY,h=root.scrollHeight-innerHeight;
+    hdr.classList.toggle('scrolled',y>30);
+    prog.style.setProperty('--sp',h>0?(y/h).toFixed(4):0);
+    if(!reduce){
+      const r=hpic.getBoundingClientRect();if(r.bottom>0)himg.style.setProperty('--py',(Math.max(-1,Math.min(1,r.top/innerHeight))*-40).toFixed(1)+'px');
+      const f=foot.getBoundingClientRect();foot.style.setProperty('--p',clamp((innerHeight-f.top)/(innerHeight*.9)).toFixed(3));
+    } else foot.style.setProperty('--p','1');
+  };
+  addEventListener('scroll',()=>{if(!q){q=true;requestAnimationFrame(onScroll)}},{passive:true});
+  onScroll();
+
+  if(!reduce&&'IntersectionObserver' in window){
+    root.classList.add('js');
+    const io=new IntersectionObserver(es=>{for(const e of es){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}},{rootMargin:'0px 0px -10% 0px'});
+    document.querySelectorAll('.rv,.stag').forEach(el=>io.observe(el));
+    setTimeout(()=>document.querySelectorAll('.rv,.stag').forEach(el=>el.classList.add('in')),6000);
+    setTimeout(()=>document.querySelectorAll('.stars.pop').forEach(el=>el.classList.add('go')),900);
+
+    /* count-up: real value already in the HTML */
+    const cio=new IntersectionObserver(es=>{for(const e of es){if(!e.isIntersecting)continue;cio.unobserve(e.target);
+      const el=e.target,to=+el.dataset.to,t0=performance.now();
+      const tick=t=>{const k=Math.min(1,(t-t0)/1400),v=Math.round(to*(1-Math.pow(1-k,3)));el.textContent=v;if(k<1)requestAnimationFrame(tick);else el.textContent=to};
+      el.textContent='0';requestAnimationFrame(tick);}},{threshold:.6});
+    document.querySelectorAll('.count').forEach(el=>cio.observe(el));
+
+    /* ripple */
+    document.addEventListener('pointerdown',e=>{const el=e.target.closest('.btn');if(!el)return;const r=el.getBoundingClientRect(),d=document.createElement('span');d.className='btn-ripple';d.style.left=(e.clientX-r.left)+'px';d.style.top=(e.clientY-r.top)+'px';d.addEventListener('animationend',()=>d.remove());el.appendChild(d);setTimeout(()=>d.remove(),900)},{passive:true});
+
+    /* magnetic */
+    if(matchMedia('(hover:hover) and (pointer:fine)').matches){
+      document.querySelectorAll('.magnetic').forEach(el=>{let raf=null,tx=0,ty=0,cx=0,cy=0,sc=1,tg=1;
+        const fr=()=>{cx+=(tx-cx)*.18;cy+=(ty-cy)*.18;sc+=(tg-sc)*.18;el.style.transform=`translate3d(${cx.toFixed(2)}px,${cy.toFixed(2)}px,0) scale(${sc.toFixed(3)})`;raf=(Math.abs(tx-cx)>.1||Math.abs(ty-cy)>.1||Math.abs(tg-sc)>.002)?requestAnimationFrame(fr):null};
+        const kick=()=>{if(!raf)raf=requestAnimationFrame(fr)};
+        el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();tx=(e.clientX-r.left-r.width/2)*.25;ty=(e.clientY-r.top-r.height/2)*.25;tg=1.04;kick()});
+        el.addEventListener('pointerleave',()=>{tx=0;ty=0;tg=1;kick()});});
+    }
+
+    /* marquee: two copies for a seamless loop */
+    const mq=document.querySelector('.mq-track');if(mq)mq.innerHTML+=mq.innerHTML;
+
+    /* scroll-stack process cards (desktop only) */
+    const initStack=(wrap,sel,opt)=>{
+      if(!wrap||innerWidth<861)return;const cards=[...wrap.querySelectorAll(sel)];if(cards.length<2)return;
+      const end=document.createElement('div');end.className='stack-end';end.setAttribute('aria-hidden','true');wrap.appendChild(end);
+      const C={sp:.24,se:.12,d:opt.d,s:opt.s,b:opt.b};const base=1-(cards.length-1)*C.s;
+      let rel=[],relEnd=0,deck=0,vh=0,last=[],qq=false;
+      const prg=(v,a,b)=>v<a?0:v>b?1:(v-a)/(b-a);
+      const measure=()=>{vh=innerHeight;const sv=cards.map(c=>c.style.transform);cards.forEach(c=>{c.style.transform='none';c.style.filter=''});
+        const wt=wrap.getBoundingClientRect().top;rel=cards.map(c=>c.getBoundingClientRect().top-wt);relEnd=end.getBoundingClientRect().top-wt;
+        let tall=0;cards.forEach(c=>tall=Math.max(tall,c.offsetHeight));deck=C.sp*vh+C.d*(cards.length-1)+tall;cards.forEach((c,i)=>c.style.transform=sv[i]);last=[];apply()};
+      const apply=()=>{const top=scrollY,wt=wrap.getBoundingClientRect().top+top,sp=C.sp*vh,se=C.se*vh,pe=wt+relEnd-deck;let ti=0;
+        cards.forEach((c,k)=>{if(top>=wt+rel[k]-sp-C.d*k)ti=k});
+        cards.forEach((c,i)=>{const ct=wt+rel[i],ps=ct-sp-C.d*i,tg=base+i*C.s,sc=1-prg(top,ps,ct-se)*(1-tg);let ty=0;if(top>=ps)ty=(top>pe?pe:top)-ct+sp+C.d*i;
+          const bl=i<ti?(ti-i)*C.b:0,t={y:Math.round(ty*100)/100,s:Math.round(sc*1000)/1000,b:Math.round(bl*100)/100},p=last[i];
+          if(p&&Math.abs(p.y-t.y)<.1&&Math.abs(p.s-t.s)<.001&&Math.abs(p.b-t.b)<.1)return;
+          c.style.transform=`translate3d(0,${t.y}px,0) scale(${t.s})`;c.style.filter=t.b>0?`blur(${t.b}px)`:'';last[i]=t})};
+      wrap.classList.add('is-stacking');measure();
+      addEventListener('scroll',()=>{if(qq)return;qq=true;requestAnimationFrame(()=>{qq=false;apply()})},{passive:true});
+      addEventListener('resize',measure);if(window.ResizeObserver)new ResizeObserver(measure).observe(wrap);
+    };
+    initStack(document.getElementById('gets'),'.get',{d:18,s:.035,b:1});
+  }
+
+  const f=document.getElementById('qf');
+  f.addEventListener('submit',ev=>{
+    ev.preventDefault();
+    let bad=null;
+    for(const id of ['f-name','f-phone']){
+      const i=document.getElementById(id),w=i.parentElement,miss=!i.value.trim();
+      w.classList.toggle('invalid',miss);i.setAttribute('aria-invalid',miss);
+      if(miss&&!bad)bad=i;
+    }
+    if(bad){bad.focus();return}
+    document.getElementById('ok').style.display='block';
+  });
+}
+</script>
+</body>
+</html>
